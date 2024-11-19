@@ -1,16 +1,16 @@
-import Calculator from "../src/calculator";
+import Calculator2 from "../src/calculator2";
 import { expect } from "chai";
 import sinon, { SinonMock, SinonSpy, SinonStub } from "sinon";
 
-describe.only("Spy Stub and Mock tests", () => {
-  let calc: Calculator;
+describe("Spy Stub and Mock tests", () => {
+  let calc: Calculator2;
   let spy: SinonSpy;
   let stub: SinonStub;
   let mock: SinonMock;
 
   before(() => {
     console.log("before");
-    calc = new Calculator();
+    calc = new Calculator2();
   });
 
   beforeEach(() => {
