@@ -75,4 +75,14 @@ describe("API Testing", () => {
   after(() => {
     nock.cleanAll();
   });
+
+  it("should return random value from 1 to 10", async () => {
+    // arrange
+    const calc = new Calculator3();
+    // act
+    const randomNumber = calc.getRandomValue();
+    // assert
+    expect(randomNumber).to.be.at.least(1);
+    expect(randomNumber).to.be.at.most(10);
+  });
 });

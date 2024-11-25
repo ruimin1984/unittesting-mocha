@@ -47,7 +47,7 @@ class Calculator3 {
 
   async saveUser(userPayload: object) {
     return await axios.post(`${baseUrl}/users`, userPayload);
-  }
+  }  
 }
 
 export default Calculator3;

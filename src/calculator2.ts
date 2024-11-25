@@ -36,6 +36,8 @@ class Calculator2 {
       }, 1000);
     });
   }
+
+  anonmyousAdd = (a: number, b: number) => a + b;
 }
 
 export default Calculator2;
